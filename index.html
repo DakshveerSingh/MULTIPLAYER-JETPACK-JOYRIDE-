@@ -5,10 +5,33 @@
 <script src="./p5.play.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBBbdt1t7f6wdHbs-m3i7dspBzGHxR1DL0",
+        authDomain: "jetpack-joyride-d1176.firebaseapp.com",
+        databaseURL: "https://jetpack-joyride-d1176-default-rtdb.firebaseio.com",
+        projectId: "jetpack-joyride-d1176",
+        storageBucket: "jetpack-joyride-d1176.appspot.com",
+        messagingSenderId: "1072391373853",
+        appId: "1:1072391373853:web:6b4bef1453b438362df2f4"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
   </head>
   <body>
       <script src="sketch.js"></script>
+      <script src="js/form.js"></script>
+      <script src="js/game.js"></script>
+      <script src="js/player.js"></script>
   
 
 </body></html>
